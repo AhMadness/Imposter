@@ -1,0 +1,4 @@
+﻿# keep only preview artifacts
+__pycache__/
+*.py[cod]
+*.log

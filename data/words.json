@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "id": "animals",
+      "name": "Animals",
+      "name_ar": "حيوانات",
+      "img": "animals.png",
+      "words": [
+        {"word": "Lion", "hint": "Wild", "word_ar": "أسد", "hint_ar": "بري"},
+        {"word": "Dolphin", "hint": "Ocean", "word_ar": "دلفين", "hint_ar": "محيط"},
+        {"word": "Falcon", "hint": "Sky", "word_ar": "صقر", "hint_ar": "سماء"}
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food",
+      "name_ar": "طعام",
+      "img": "food.png",
+      "words": [
+        {"word": "Pizza", "hint": "Cheese", "word_ar": "بيتزا", "hint_ar": "جبن"},
+        {"word": "Sushi", "hint": "Rice", "word_ar": "سوشي", "hint_ar": "أرز"},
+        {"word": "Pasta", "hint": "Italy", "word_ar": "باستا", "hint_ar": "إيطاليا"}
+      ]
+    },
+    {
+      "id": "party_time",
+      "name": "Party Time",
+      "name_ar": "وقت الحفلة",
+      "img": "party_time.png",
+      "words": [
+        {"word": "Balloon", "hint": "Air", "word_ar": "بالون", "hint_ar": "هواء"},
+        {"word": "Music", "hint": "Sound", "word_ar": "موسيقى", "hint_ar": "صوت"},
+        {"word": "Cake", "hint": "Birthday", "word_ar": "كعكة", "hint_ar": "عيد ميلاد"}
+      ]
+    }
+  ]
+}

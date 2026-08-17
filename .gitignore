@@ -1,4 +1,15 @@
-﻿# keep only preview artifacts
 __pycache__/
 *.py[cod]
+.venv/
+venv/
+.idea/
+.vscode/
+build/
+dist/
+*.exe
+*.zip
+*.spec
 *.log
+backup.txt
+.DS_Store
+Thumbs.db

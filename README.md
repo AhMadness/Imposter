@@ -1,50 +1,53 @@
 # Imposter
 
-A bilingual desktop social-deduction game built with Python and PyQt6. Players
-use QR codes for private role reveals while a shared desktop interface manages
-the game flow.
+A bilingual desktop social-deduction game built with Python and PyQt6. One computer hosts the game while players use their phones to scan individual QR codes and privately reveal their role or secret word.
 
-> This repository is a public product preview. The application source and
-> content-management tools remain private.
+## Features
 
-## Highlights
+- English and Arabic interfaces with right-to-left layout support
+- Configurable player and imposter counts
+- Private phone-based role reveal through generated QR codes
+- Optional hints for imposters
+- Elimination rounds, meeting timer, and win-state tracking
+- Multiple selectable word categories with custom artwork
+- Companion desktop manager for editing categories, bilingual words, hints, and images
 
-- English and Arabic interfaces
-- Multi-category word packs
-- Imposter and crew role flow
-- Private QR-based role reveals
-- Elimination and game-over workflows
-- Companion content manager for categories and words
+## Preview
 
-## Visual Preview
+![Animals category](assets/animals.png)
+![Food category](assets/food.png)
+![Party category](assets/party_time.png)
 
-### Main screen
+## Run Locally
 
-<img width="627" height="914" alt="Imposter main screen" src="https://github.com/user-attachments/assets/66a1c797-b315-4866-bbaf-0eb5a0713371" />
+Requirements: Python 3.11+.
 
-### Setup
+```bash
+python -m pip install -r requirements.txt
+python main.py
+```
 
-<img width="718" height="914" alt="Imposter game setup" src="https://github.com/user-attachments/assets/792ed0d8-19ba-4b1b-8a4e-e0948713ce75" />
+The repository includes a small bilingual sample word pack. Run the companion manager with:
 
-### Role reveal
+```bash
+python content_manager.py
+```
 
-<img width="718" height="914" alt="Imposter role reveal" src="https://github.com/user-attachments/assets/56e98971-8814-447d-acb0-e46d839b2996" />
+## Validate and Test
 
-### Game flow
+```bash
+python validate_words.py --strict
+python -m unittest discover -s tests -v
+```
 
-<img width="718" height="914" alt="Imposter game start" src="https://github.com/user-attachments/assets/e665eaeb-c378-40e0-9e76-1f2e5321cc09" />
+## Project Structure
 
-<img width="718" height="914" alt="Imposter elimination workflow" src="https://github.com/user-attachments/assets/3247c7e0-24ce-4224-a5bf-a9a98266e053" />
+- `main.py`: game interface and round logic
+- `content_manager.py`: category and word-pack editor
+- `data/words.json`: sample bilingual content
+- `validate_words.py`: content schema validator
+- `tests/`: automated model and content tests
 
-<img width="718" height="914" alt="Imposter game-over screen" src="https://github.com/user-attachments/assets/b7fe5cf2-150d-4f4a-a35b-0e5682fd4bf1" />
+## License
 
-### Content manager
-
-<img width="1227" height="939" alt="Imposter category manager" src="https://github.com/user-attachments/assets/7d552fd7-2ac1-4f9e-99fb-57c7a57b7d50" />
-
-<img width="1227" height="939" alt="Imposter word manager" src="https://github.com/user-attachments/assets/c6b3250d-4213-45a1-bb29-2fa4f769727a" />
-
-## Availability
-
-For a technical walkthrough or demonstration, contact
-[Ahmad Jomaa](https://github.com/AhMadness).
+The source code is available under the [MIT License](LICENSE). Included category artwork is provided for demonstration and is not covered by the MIT License.
